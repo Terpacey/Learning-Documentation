@@ -22,7 +22,15 @@
 
  ### Summary:
 
+ The visual transistor simulator is a visual representation of a 6502 chip, one of the first mass-market CPUs. Written in Pythjom, this simulator runs at about 55 half-clock steps per second. Due to its nature as a simulator, it is only an approximation and therefore not accurate
+
  ### Key Takeaways:
 
+It converts Bitmaps into polygon fragments
+55 half-clock steps, effectively a 27 Hz clock speed
+The simulation runs at different speeds depending on the language
 
  ### Reflections:
+
+ Even with a visual representation, the architecture is extremely difficult to comprehend as the images are packed and the animation runs far too fast, making it extremely difficult to trace any path.
+ Without the layout, the data given is basically impossible to understand
