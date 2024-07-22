@@ -1,0 +1,145 @@
+# Research Paper Exploration:
+
+## Key Objectives:
+ 
+This paper aims to compare different computer architecture simulation techniques, to help pick the appropriate simulation for a field using classifications based on features, capabilities and I/O types
+
+## Methodologies:
+
+### Classification:
+
+There are 3 major criteria to base the simulations into different groups:
+
+Scope:
+
+The scope of the simulator when making it decides its capabilities, as simulators are made according to the needs. For example, a simulator for educational purposes will prioritize the user experience over the accuracy of data, 
+while a simulator meant for debugging will prioritize clock accuracy over all else. The study considers multiple factors such as level of detail, input/output type and variety, and its overall information handling
+capabilities. 
+
+Simulation Detail:
+
+This refers to the accuracy of information processed by the simulator, and if the simulator would provide a similar and precise output as compared to the original CPU 
+
+Input Type:
+
+This refers to the different types of input the simulation can take, limitations can range from only being able to take in numerical or character values, predetermined instructions, and basic assembly code
+
+#### Comparison:
+
+Detailed comparisons based on micro-architectural details, experimental error, and flexibility for six contemporary x86 simulators((gem5, MARSSx86, Multi2Sim, PTLsim, Sniper, ZSim)
+
+Validation:
+
+This paper compares the simulations' level of error against real hardware to test their accuracy compared to physical components
+
+## Findings:
+
+### Simulator Categories:
+
+The simulators were classified into 3 categories:
+
+Functional:
+
+Focuses on real-world fidelity and accuracy. The simulators are closely modelled after real-world architecture, sacrificing details like micro-architectural parameters in favour of simulating the hardware as
+accurately as possible
+
+Timing:
+
+These simulators focussed more on information regarding the timing of processes and performance, such as the length of an instruction cycle. This category has 3 further sub-categories: cycle-level, event-driven and intervals
+
+Integrated:
+
+These simulators have properties of both functional and timing simulators, allowing for the most detailed simulation possible
+
+#### Performance:
+
+The paper highlights the trade-offs between simulation speed and accuracy, with functional simulators being faster but less detailed than timing simulators
+
+### Validation Challenges
+
+The paper talks about the challenges faced in validating results, emphasizing the need for testing against real hardware
+
+### Experimental Results:
+
+The simulators each displayed different levels of accuracy, each with their own strengths and weaknesses
+
+## Critical Analysis:
+
+### Advantages:
+
+Accuracy in Simulations: Sniper and ZSim had the most accurate results. These types of simulators are essential for research and development
+
+Flexibility: MARSSx86 and gem5 allow for the most customization and flexibility. This is essential to test new design ideas and study the performance of specific micro-architectural blocks
+
+Performance:  Sniper and ZSim have the fastest simulation speeds, which is advantageous when studying multi-core architectures
+
+### Limitations:
+
+Inflexibility: Sniper and ZSim are less flexible for modelling new micro-architecture features, which can hinder research that requires extensive customization and new feature integration
+
+Accuracy Issues: Accuracy between simulators varies greatly, leading to inaccuracies in simulation results. Unvalidated or uncalibrated simulators provide results that have considerable variation when compared
+                 to real hardware
+
+## Application
+
+The different simulation categories give us a good view on how the different simulators function, as well as their distinct differences. The use of these categories can help determine which simulation to use 
+depending on the required task. Additionally, the paper gives us a good understanding of the trade-offs between speed and accuracy. This can help provide more accurate results when choosing a simulator depending
+on the needs of the experiment. Finally, the paper's format and structure can be selectively 
+
+# Evaluating emulsiV:
+
+## Overview:
+
+emulsiV is an educational CPU simulator that shows the steps taken by a CPU to carry out a certain set of instructions or tasks. It is capable of using premade instructions provided by the website, it also allows
+the user to edit certain instructions. The simulator also gives the user a visual representation of every single step, reflecting its scope and purpose as an educational tool. Users can also write their own programs.
+
+The simulator has a well-detailed manual to teach users anything they need to know, and is heavily customizable, offering users options for the visual displays.
+
+## Advantages and Disadvantages
+
+Advantages:
+
+User Friendly: As it was originally created to teach University Students about computer architecture, the program is relatively simple to use. Additionally, every part and step is colour coded, such as orange marking 
+modifications to information through new data or operations, blue marking start and end points, etc.
+
+Educational uses: It is relatively easy to understand the tool after a bit of research and is not overly difficult. Reflecting the previous point, using preset instructions or modifying instructions is relatively easy
+when compared to other similar tools. The customizability is additionally useful for those that would wish to write their own code in assembly. The site also provides a detailed manual to help with this aspect
+
+Versatility and Flexibility: THe tool in addition to providing users the ability to write their own code, also allows the user to get an output in 3 ways; text, bitmap and a button display
+
+Disadvantages:
+
+Inaccurate simulation: Due to its nature as an educational tool, accuracy of outputs or CPU clock cycles were not prioritized, making it much weaker compared to other simulators in its prescision. While it is useful to 
+understand the architecture of a CPU, it should not be relied on for research or design purposes.
+
+Tool limitations: Due to its need to be availble on a browser, the tool itself is limited in its max capabilities. Animation speed for example, is capped, increasing the time taken to carry out instructions when compared
+to real hardware
+
+## Comparison with Traditional Tools:
+
+When comparing it with the precious two CPU simulation tools, in this case, taking CPU Visual Simulator, there are a few key points that stand out
+
+Performance: CPU Visual simulator, although simpler than emulsiV, has a higher fidelity structure than emulsiV, making it much more accurate to real world hardware
+
+Usability: While both simulators have a manual explaining their use, emulsiV is far superior in how user-friendly it is
+
+Result Error Level and Accuracy: emulsiV is not the most accurate of simulators, even compared to CPU visual simulator, making it more impractical for any research purposes
+
+Visualization: For visualization, emulsiV is far superior as it highlights each individual step as compared to CPU Visual Simulator, which focusses more on the CPU clock path
+
+## Practical Application:
+
+THe best practical application for emulsiV is its original purpose, as an educational tool that can help students learn and understand computer architecture and how a CPU processes data. As the creators have stated, it is
+otherwise impractical to use for other purposes like research and design
+
+##References:
+
+https://ieeexplore.ieee.org/document/8718630
+
+https://www.youtube.com/watch?v=QqBmVEBhdco
+
+https://eseo-tech.github.io/emulsiV/
+
+https://cpuvisualsimulator.github.io/
+
+
